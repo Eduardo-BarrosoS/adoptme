@@ -1,0 +1,86 @@
+.module--header {
+  background: linear-gradient(
+    180deg,
+    rgba(195, 222, 255, 0.33) 0%,
+    rgba(216, 216, 216, 0) 54.69%,
+    rgba(190, 220, 255, 0.22) 100%
+  );
+
+  header,
+  &__logo,
+  ul,
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header {
+    max-width: 72.4rem;
+    margin-inline: auto;
+    padding: 45px 24px 20px;
+    gap: 40px;
+  }
+  &__logo {
+    div {
+      color: #304057;
+      font-size: 24px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    gap: 16px;
+    width: 100%;
+    max-width: 660px;
+    @include max-md {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    gap: 16px;
+    font-size: 20px;
+    @include max-md {
+      display: none;
+    }
+    i {
+      color: #304057;
+    }
+    button {
+      transition: all 300ms ease-in-out;
+      min-width: 116px;
+      border: none;
+      outline: none;
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:nth-child(2) {
+        color: #304057;
+        background: transparent;
+      }
+      &:last-child {
+        padding: 9px 20px 10px;
+        border-radius: 3px;
+        background: #304057;
+        color: #fff;
+      }
+    }
+  }
+
+  &__mobile-bars {
+    display: none;
+    i {
+      font-size: 28px;
+      cursor: pointer;
+    }
+    @include max-md {
+      display: flex;
+    }
+  }
+}

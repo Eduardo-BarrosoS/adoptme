@@ -21,7 +21,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -49,921 +48,789 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-
 /* Normalize
 --------------------------------------------- */
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-	 ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
-}
-
-/* Sections
-	 ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-body {
-	margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-	display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-/* Grouping content
-	 ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
-/* Text-level semantics
-	 ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-	background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-	border-bottom: none;
-	text-decoration: underline;
-	text-decoration: underline dotted;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-	font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-	font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-sup {
-	top: -0.5em;
-}
-
-/* Embedded content
-	 ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-	border-style: none;
-}
-
-/* Forms
-	 ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-	overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-	text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-	-webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-	padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *		`fieldset` elements in all browsers.
- */
-legend {
-	box-sizing: border-box;
-	color: inherit;
-	display: table;
-	max-width: 100%;
-	padding: 0;
-	white-space: normal;
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-	vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-	overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-	-webkit-appearance: textfield;
-	outline-offset: -2px;
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	font: inherit;
-}
-
-/* Interactive
-	 ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-	display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-	display: list-item;
-}
-
-/* Misc
-	 ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-template {
-	display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-	display: none;
-}
-
 /* Box sizing
 --------------------------------------------- */
-
-/* Inherit box-sizing to more easily change it's value on a component level.
-@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
-
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
-/* Typography
---------------------------------------------- */
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", courier, monospace;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-big {
-	font-size: 125%;
-}
-
-/* Elements
---------------------------------------------- */
-body {
-	background: #fff;
-}
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
-
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: 700;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
-img {
-	height: auto;
-	max-width: 100%;
-}
-
-figure {
-	margin: 1em 0;
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-/* Links
---------------------------------------------- */
-a {
-	color: #4169e1;
-}
-
-a:visited {
-	color: #800080;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: #191970;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
-}
-
-/* Forms
---------------------------------------------- */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-}
-
-button:active,
-button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-	color: #111;
-}
-
-select {
-	border: 1px solid #ccc;
-}
-
-textarea {
-	width: 100%;
-}
-
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
-/* Navigation
---------------------------------------------- */
-.main-navigation {
-	display: block;
-	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
-	margin: 0 0 1.5em;
-}
-
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	flex: 1 0 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	text-align: end;
-	flex: 1 0 50%;
-}
-
-/* Posts and pages
---------------------------------------------- */
-.sticky {
-	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
-
-.updated:not(.published) {
-	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-/* Comments
---------------------------------------------- */
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
-}
-
-/* Widgets
---------------------------------------------- */
-.widget {
-	margin: 0 0 1.5em;
-}
-
-.widget select {
-	max-width: 100%;
-}
-
-/* Media
---------------------------------------------- */
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-}
-
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-	display: inline-block;
-}
-
-/* Captions
---------------------------------------------- */
-.wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
-
-.wp-caption-text {
-	text-align: center;
-}
-
-/* Galleries
---------------------------------------------- */
-.gallery {
-	margin-bottom: 1.5em;
-	display: grid;
-	grid-gap: 1.5em;
-}
-
-.gallery-item {
-	display: inline-block;
-	text-align: center;
-	width: 100%;
-}
-
-.gallery-columns-2 {
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.gallery-columns-3 {
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.gallery-columns-4 {
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.gallery-columns-5 {
-	grid-template-columns: repeat(5, 1fr);
-}
-
-.gallery-columns-6 {
-	grid-template-columns: repeat(6, 1fr);
-}
-
-.gallery-columns-7 {
-	grid-template-columns: repeat(7, 1fr);
-}
-
-.gallery-columns-8 {
-	grid-template-columns: repeat(8, 1fr);
-}
-
-.gallery-columns-9 {
-	grid-template-columns: repeat(9, 1fr);
-}
-
-.gallery-caption {
-	display: block;
-}
-
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-
 /* Jetpack infinite scroll
 --------------------------------------------- */
-
-/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	display: none;
-}
-
-/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-}
-
-/* Do not show the outline on the skip link target. */
-#primary[tabindex="-1"]:focus {
-	outline: 0;
-}
-
 /* Alignments
 --------------------------------------------- */
-.alignleft {
-
-	/*rtl:ignore*/
-	float: left;
-
-	/*rtl:ignore*/
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
+bady {
+  margin: 0px !important;
 }
 
-.alignright {
-
-	/*rtl:ignore*/
-	float: right;
-
-	/*rtl:ignore*/
-	margin-left: 1.5em;
-	margin-bottom: 1.5em;
+* {
+  font-family: "Sawarabi Gothic";
+  font-weight: 400;
 }
 
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.5em;
+p {
+  margin: 0;
 }
+
+h1 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Sawarabi Gothic";
+  src: url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+  font-weight: 400; /* Medium usually corresponds to a font-weight of 500 */
+  font-style: normal;
+  color: red;
+}
+.module--site-footer {
+  background: linear-gradient(180deg, rgba(195, 222, 255, 0.33) 0%, rgba(216, 216, 216, 0) 76.04%, rgba(195, 222, 255, 0.22) 100%);
+  border-top: 1px solid #c6cfdc;
+}
+.module--site-footer__info {
+  padding: 40px 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 991.98px) {
+  .module--site-footer__info {
+    padding: 24px 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .module--site-footer__info {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.module--site-footer__info div:first-child {
+  text-transform: uppercase;
+}
+.module--site-footer__info div:first-child, .module--site-footer__info div:last-child {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+@media (max-width: 991.98px) {
+  .module--site-footer__info div:first-child, .module--site-footer__info div:last-child {
+    font-size: 14px;
+  }
+}
+
+.module--header {
+  background: linear-gradient(180deg, rgba(195, 222, 255, 0.33) 0%, rgba(216, 216, 216, 0) 54.69%, rgba(190, 220, 255, 0.22) 100%);
+}
+.module--header header, .module--header__logo,
+.module--header ul, .module--header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.module--header header {
+  max-width: 72.4rem;
+  margin-inline: auto;
+  padding: 45px 24px 20px;
+  gap: 40px;
+}
+.module--header__logo div {
+  color: #304057;
+  font-size: 24px;
+}
+.module--header__logo img {
+  width: 24px;
+  height: 24px;
+}
+.module--header ul {
+  padding: 0;
+  list-style: none;
+  gap: 16px;
+  width: 100%;
+  max-width: 660px;
+}
+@media (max-width: 991.98px) {
+  .module--header ul {
+    display: none;
+  }
+}
+.module--header__buttons {
+  gap: 16px;
+  font-size: 20px;
+}
+@media (max-width: 991.98px) {
+  .module--header__buttons {
+    display: none;
+  }
+}
+.module--header__buttons i {
+  color: #304057;
+}
+.module--header__buttons button {
+  transition: all 300ms ease-in-out;
+  min-width: 116px;
+  border: none;
+  outline: none;
+}
+.module--header__buttons button:hover {
+  transform: scale(1.1);
+}
+.module--header__buttons button:nth-child(2) {
+  color: #304057;
+  background: transparent;
+}
+.module--header__buttons button:last-child {
+  padding: 9px 20px 10px;
+  border-radius: 3px;
+  background: #304057;
+  color: #fff;
+}
+.module--header__mobile-bars {
+  display: none;
+}
+.module--header__mobile-bars i {
+  font-size: 28px;
+  cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .module--header__mobile-bars {
+    display: flex;
+  }
+}
+
+.page-template-homepage .module--hero {
+  background: linear-gradient(180deg, rgba(196, 222, 255, 0.33) 0%, rgba(216, 216, 216, 0) 54.69%, rgba(190, 220, 255, 0.215644) 100%);
+  font-family: "Sawarabi Gothic";
+}
+.page-template-homepage .module--hero__container {
+  max-width: 72.4rem;
+  margin-inline: auto;
+  padding: 67px 24px 90px;
+  display: flex;
+  gap: 78px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--hero__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.page-template-homepage .module--hero__content h1 {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 79px;
+  color: #304057;
+  font-family: "Sawarabi Gothic";
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--hero__content h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+.page-template-homepage .module--hero__content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #6d6d6d;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--hero__content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.page-template-homepage .module--hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--hero__buttons {
+    flex-direction: column;
+  }
+}
+.page-template-homepage .module--hero__buttons button {
+  font-family: "Sawarabi Gothic";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.page-template-homepage .module--hero__buttons button:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--hero__buttons button {
+    width: 100%;
+  }
+}
+.page-template-homepage .module--hero__buttons button:first-child {
+  background: #304057;
+  color: #ffffff;
+}
+.page-template-homepage .module--hero__buttons button:last-child {
+  background: transparent;
+  color: #304057;
+}
+.page-template-homepage .module--hero__image {
+  margin-inline: auto;
+}
+@media (max-width: 1199.98px) {
+  .page-template-homepage .module--hero__image img {
+    width: 100%;
+    max-width: 540px;
+  }
+}
+
+.page-template-homepage .module--our-mission {
+  max-width: 72.4rem;
+  margin-inline: auto;
+  padding: 72px 24px 58px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--our-mission {
+    flex-direction: column;
+  }
+}
+.page-template-homepage .module--our-mission__left-container div:nth-child(1) {
+  font-family: "Sawarabi Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #637c95;
+  margin-bottom: 5px;
+}
+.page-template-homepage .module--our-mission__left-container div:nth-child(2) {
+  font-family: "Sawarabi Gothic";
+  font-weight: 400;
+  font-size: 36px;
+  color: #151515;
+  margin-bottom: 128px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--our-mission__left-container div:nth-child(2) {
+    margin-bottom: 40px;
+  }
+}
+.page-template-homepage .module--our-mission__left-container div:nth-child(3) {
+  width: 572px;
+}
+.page-template-homepage .module--our-mission__left-container div:nth-child(3) img {
+  width: 100%;
+}
+@media (max-width: 1199.98px) {
+  .page-template-homepage .module--our-mission__left-container div:nth-child(3) {
+    max-width: 460px;
+  }
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--our-mission__left-container div:nth-child(3) {
+    width: 100%;
+    max-width: 650px;
+    margin-inline: auto;
+  }
+}
+.page-template-homepage .module--our-mission__right-container div:nth-child(1) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #6d6d6d;
+  margin-bottom: 110px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--our-mission__right-container div:nth-child(1) {
+    margin-bottom: 40px;
+  }
+}
+.page-template-homepage .module--our-mission__right-container div:nth-child(2) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #637c95;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--our-mission__right-container div:nth-child(2) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+.page-template-homepage .module--our-mission__right-container div:nth-child(3) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  color: #151515;
+  margin-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--our-mission__right-container div:nth-child(3) {
+    font-size: 26px;
+    line-height: 100%;
+  }
+}
+.page-template-homepage .module--our-mission__right-container div:nth-child(4) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #6d6d6d;
+  margin-bottom: 46px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--our-mission__right-container div:nth-child(4) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+.page-template-homepage .module--our-mission__info-container {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--our-mission__info-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    margin-inline: auto;
+    gap: 24px;
+  }
+}
+.page-template-homepage .module--our-mission__info-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.page-template-homepage .module--our-mission__info-container div:nth-child(1) {
+  margin: 0;
+}
+.page-template-homepage .module--our-mission__info-container div div:nth-child(1) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #304057;
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--our-mission__info-container div div:nth-child(1) {
+    font-size: 26px;
+    line-height: 100%;
+  }
+}
+.page-template-homepage .module--our-mission__info-container div div:nth-child(2) {
+  font-family: "Sawarabi Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #6d6d6d;
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--our-mission__info-container div div:nth-child(2) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.page-template-homepage .module--pets-slider {
+  padding: 67px 24px 52px;
+  max-width: 72.4rem;
+  padding: 0px 24px;
+  margin-inline: auto;
+}
+.page-template-homepage .module--pets-slider__header {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #637c95;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--pets-slider__header {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.page-template-homepage .module--pets-slider__subheader {
+  font-size: 36px;
+  line-height: 53px;
+  color: #151515;
+  max-width: 417px;
+  margin-bottom: 16px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--pets-slider__subheader {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+.page-template-homepage .module--pets-slider__description {
+  font-size: 20px;
+  line-height: 29px;
+  color: #6d6d6d;
+  max-width: 593px;
+  margin-bottom: 8px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--pets-slider__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.page-template-homepage .module--pets-slider__filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--pets-slider__filter-container {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+}
+.page-template-homepage .module--pets-slider__filter-button {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #6d6d6d;
+  border: none;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.page-template-homepage .module--pets-slider__filter-button:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--pets-slider__filter-button {
+    flex: 1;
+    justify-content: space-between;
+  }
+}
+.page-template-homepage .module--pets-slider__arrows-container {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+.page-template-homepage .module--pets-slider__arrows-container .swiper-button-prev {
+  position: relative;
+  left: 0;
+}
+.page-template-homepage .module--pets-slider__arrows-container .swiper-button-next {
+  position: relative;
+  right: 0;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--pets-slider__arrows-container {
+    width: 100%;
+  }
+  .page-template-homepage .module--pets-slider__arrows-container .swiper-button-next {
+    position: relative;
+  }
+}
+.page-template-homepage .module--pets-slider .swiper {
+  width: 100%;
+}
+.page-template-homepage .module--pets-slider__pet-card {
+  background: #fefefe;
+  transition: all 300ms ease-in-out;
+  padding: 8px;
+  max-width: 282px;
+}
+.page-template-homepage .module--pets-slider__pet-card:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--pets-slider__pet-card {
+    max-width: 242px;
+  }
+}
+.page-template-homepage .module--pets-slider__img-container {
+  width: 281px;
+  height: 341px;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--pets-slider__img-container {
+    width: 241px;
+    height: 301px;
+  }
+}
+.page-template-homepage .module--pets-slider__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.page-template-homepage .module--pets-slider__img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+.page-template-homepage .module--pets-slider__img-overlay:hover {
+  opacity: 1;
+}
+.page-template-homepage .module--pets-slider__adopt-button {
+  padding: 9px 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #304057;
+  border-radius: 3px;
+  border: none;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+.page-template-homepage .module--pets-slider__adopt-button:hover {
+  transform: scale(1.1);
+}
+.page-template-homepage .module--pets-slider__waiting-time {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(9px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 297px;
+  height: 60px;
+  z-index: 10;
+}
+.page-template-homepage .module--pets-slider__waiting-time span {
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #151515;
+}
+.page-template-homepage .module--pets-slider__pet-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3;
+  flex-direction: column;
+  margin: 0;
+  padding-block: 14px;
+  width: 281px;
+}
+.page-template-homepage .module--pets-slider__pet-name, .page-template-homepage .module--pets-slider__pet-age {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #151515;
+}
+
+.page-template-homepage .module--stories {
+  max-width: 72.4rem;
+  padding: 52px 24px 142px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--stories {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.page-template-homepage .module--stories img {
+  width: 100%;
+  max-width: 520px;
+}
+.page-template-homepage .module--stories__content {
+  max-width: 593px;
+}
+.page-template-homepage .module--stories__header {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #637c95;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--stories__header {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.page-template-homepage .module--stories__subheader {
+  font-size: 36px;
+  line-height: 53px;
+  color: #151515;
+  margin-bottom: 19px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--stories__subheader {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+.page-template-homepage .module--stories__description {
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 32px;
+  color: #6d6d6d;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--stories__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.page-template-homepage .module--stories__button {
+  background: #304057;
+  border-radius: 3px;
+  padding: 12px 50px;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 575.98px) {
+  .page-template-homepage .module--stories__button {
+    width: 100%;
+  }
+}
+
+.page-template-homepage .module--faqs {
+  background: linear-gradient(180deg, rgba(195, 222, 255, 0.33) 0%, rgba(216, 216, 216, 0) 76.04%, rgba(195, 222, 255, 0.22) 100%);
+}
+.page-template-homepage .module--faqs__container {
+  max-width: 72.4rem;
+  margin-inline: auto;
+  padding: 93px 24px;
+}
+.page-template-homepage .module--faqs__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-template-homepage .module--faqs__header {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #637c95;
+}
+.page-template-homepage .module--faqs__subheader {
+  max-width: 417px;
+  color: #151515;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.page-template-homepage .module--faqs__description {
+  max-width: 593px;
+  color: #6d6d6d;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 107px;
+}
+@media (max-width: 767.98px) {
+  .page-template-homepage .module--faqs__description {
+    margin-bottom: 50px;
+  }
+}
+.page-template-homepage .module--faqs__faqs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--faqs__faqs-container {
+    grid-template-columns: 1fr;
+  }
+}
+.page-template-homepage .module--faqs__item {
+  cursor: pointer;
+  background: #fff;
+  max-width: 629px;
+}
+.page-template-homepage .module--faqs__item:not(:last-child) {
+  border: 1px solid #e6e6e6;
+}
+@media (max-width: 991.98px) {
+  .page-template-homepage .module--faqs__item {
+    max-width: none;
+  }
+}
+.page-template-homepage .module--faqs__question {
+  color: #304057;
+  font-size: 18px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+}
+.page-template-homepage .module--faqs__question i {
+  margin-left: auto;
+  padding-left: 12px;
+}
+.page-template-homepage .module--faqs__answer {
+  color: #6d6d6d;
+  font-size: 16px;
+  padding-inline: 32px;
+  padding-bottom: 28px;
+}
+
+/*# sourceMappingURL=style.css.map */

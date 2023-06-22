@@ -1,0 +1,188 @@
+.page-template-homepage {
+  .module--our-mission {
+    max-width: 72.4rem;
+    margin-inline: auto;
+    padding: 72px 24px 58px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include max-md {
+      flex-direction: column;
+    }
+
+    &__left-container {
+      // Styles for left container in "our mission" module
+
+      div {
+        // Styles for div elements within left container
+
+        &:nth-child(1) {
+          font-family: "Sawarabi Gothic";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #637c95;
+          margin-bottom: 5px;
+        }
+
+        &:nth-child(2) {
+          font-family: "Sawarabi Gothic";
+          font-weight: 400;
+          font-size: 36px;
+          color: #151515;
+          margin-bottom: 128px;
+          @include max-md {
+            margin-bottom: 40px;
+          }
+        }
+
+        &:nth-child(3) {
+          // Specific styles for the third div child (image)
+
+          width: 572px;
+          img {
+            width: 100%;
+          }
+          @include max-lg {
+            max-width: 460px;
+          }
+          @include max-md {
+            width: 100%;
+            max-width: 650px;
+            margin-inline: auto;
+          }
+        }
+      }
+    }
+
+    &__right-container {
+      // Styles for right container in "our mission" module
+
+      div {
+        // Styles for div elements within right container
+
+        &:nth-child(1) {
+          font-family: "Sawarabi Gothic";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+
+          color: #6d6d6d;
+          margin-bottom: 110px;
+
+          @include max-md {
+            margin-bottom: 40px;
+          }
+        }
+
+        &:nth-child(2) {
+          font-family: "Sawarabi Gothic";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+
+          color: #637c95;
+          @include max-sm {
+            font-size: 16px;
+            line-height: 100%;
+          }
+        }
+
+        &:nth-child(3) {
+          font-family: "Sawarabi Gothic";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 53px;
+
+          color: #151515;
+          margin-bottom: 24px;
+          @include max-sm {
+            font-size: 26px;
+            line-height: 100%;
+          }
+        }
+
+        &:nth-child(4) {
+          font-family: "Sawarabi Gothic";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+
+          color: #6d6d6d;
+          margin-bottom: 46px;
+          @include max-sm {
+            font-size: 16px;
+            line-height: 100%;
+          }
+        }
+      }
+    }
+    &__info-container {
+      display: flex;
+      flex: 1;
+      gap: 12px;
+      @include max-xs {
+        flex-direction: column;
+        align-items: center;
+        max-width: 250px;
+        margin-inline: auto;
+        gap: 24px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+        &:nth-child(1) {
+          margin: 0;
+        }
+        div {
+          // Styles for the divs within the first info item
+
+          &:nth-child(1) {
+            font-family: "Sawarabi Gothic";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 53px;
+            text-align: center;
+
+            color: #304057;
+            margin: 0;
+            @include max-sm {
+              font-size: 26px;
+              line-height: 100%;
+            }
+          }
+
+          &:nth-child(2) {
+            font-family: "Sawarabi Gothic";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+
+            color: #6d6d6d;
+            margin: 0;
+            @include max-sm {
+              font-size: 16px;
+              line-height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

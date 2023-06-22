@@ -1,0 +1,74 @@
+.page-template-homepage {
+  .module--stories {
+    max-width: 72.4rem;
+    padding: 52px 24px 142px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include max-md {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 520px;
+    }
+
+    &__content {
+      max-width: 593px;
+    }
+
+    &__header {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: #637c95;
+      @include max-sm {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__subheader {
+      font-size: 36px;
+      line-height: 53px;
+      color: #151515;
+      margin-bottom: 19px;
+      @include max-sm {
+        font-size: 26px;
+        line-height: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 32px;
+      color: #6d6d6d;
+      @include max-sm {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__button {
+      background: #304057;
+      border-radius: 3px;
+
+      padding: 12px 50px;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      color: #ffffff;
+
+      @include max-xs {
+        width: 100%;
+      }
+    }
+  }
+}

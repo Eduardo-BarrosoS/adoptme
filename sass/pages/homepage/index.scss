@@ -1,0 +1,10 @@
+@import "hero";
+@import "our_mission";
+@import "pets_slider";
+@import "stories";
+@import "faqs";
+
+@mixin max-width-page() {
+  max-width: 72.4rem;
+  margin-inline: auto;
+}

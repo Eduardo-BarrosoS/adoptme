@@ -182,3 +182,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+function theme_name_scripts() {
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery-ui-accordion');
+}
+add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );

@@ -1,0 +1,38 @@
+.module--site-footer {
+  background: linear-gradient(
+    180deg,
+    rgba(195, 222, 255, 0.33) 0%,
+    rgba(216, 216, 216, 0) 76.04%,
+    rgba(195, 222, 255, 0.22) 100%
+  );
+  border-top: 1px solid #c6cfdc;
+  &__info {
+    padding: 40px 24px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    @include max-md {
+      padding: 24px 24px;
+    }
+    @include max-sm {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__info div:first-child {
+    text-transform: uppercase;
+  }
+  &__info div:first-child,
+  &__info div:last-child {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+
+    @include max-md {
+      font-size: 14px;
+    }
+  }
+}
